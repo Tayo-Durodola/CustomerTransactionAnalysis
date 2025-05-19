@@ -1,10 +1,9 @@
 -- Assessment_Q2.sql
 
--- Q2: Calculate transaction frequency per customer and categorize
--- Task: Calculate the average number of transactions per customer per month and categorize them:
---       "High Frequency" (>= 10 transactions/month)
---       "Medium Frequency" (3-9 transactions/month)
---       "Low Frequency" (<= 2 transactions/month)
+-- To calculate the average number of transactions per customer per month and categorize them:
+--    "High Frequency" (>= 10 transactions/month)
+--    "Medium Frequency" (3-9 transactions/month)
+--    "Low Frequency" (<= 2 transactions/month)
 
 WITH SavingsTransactions AS (
     SELECT owner_id, transaction_date
@@ -29,7 +28,7 @@ TransactionCounts AS (
         COUNT(t.transaction_date) AS total_transactions,
         CASE
             WHEN MIN(t.transaction_date) IS NULL OR MAX(t.transaction_date) IS NULL THEN 1  -- Avoid division by zero if no transactions
-            ELSE TIMESTAMPDIFF(MONTH, MIN(t.transaction_date), MAX(t.transaction_date)) + 1
+            ELSE TIMESTAMPDIFF(MONTH, MIN(t.transaction_date), MAX(t.transaction_date)) + 1  -- Calculate active months
         END AS active_months
     FROM
         users_customuser u
@@ -42,9 +41,9 @@ SELECT
         WHEN (total_transactions / active_months) >= 10 THEN 'High Frequency'
         WHEN (total_transactions / active_months) BETWEEN 3 AND 9 THEN 'Medium Frequency'
         ELSE 'Low Frequency'
-    END AS frequency_category,
+    END AS frequency_category,  -- Categorize transaction frequency
     COUNT(customer_id) AS customer_count,
-    ROUND(AVG(total_transactions / active_months), 1) AS avg_transactions_per_month
+    ROUND(AVG(total_transactions / active_months), 1) AS avg_transactions_per_month  -- Calculate average transactions per month
 FROM
     TransactionCounts
 WHERE
