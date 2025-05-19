@@ -1,11 +1,8 @@
 -- Assessment_Q1.sql
 
--- Q1: Identify customers with both funded savings and investment plans
--- Task: Find customers with at least one savings plan (is_regular_savings = 1)
---       that has a confirmed deposit (confirmed_amount > 0) AND at least one
---       investment plan (is_a_fund = 1).
--- Output: owner_id, name, savings_count, investment_count, total_deposits
--- Sorted by total_deposits in descending order.
+-- To find customers with at least one savings plan (is_regular_savings = 1)
+--     that has a confirmed deposit (confirmed_amount > 0) AND at least one
+--     investment plan (is_a_fund = 1).
 
 SELECT
     u.id AS owner_id, 
