@@ -1,8 +1,8 @@
 -- Assessment_Q4.sql
 
--- Task: Calculate CLV for each customer based on account tenure and transaction volume.
--- CLV = (total_transactions / tenure) * 12 * avg_profit_per_transaction
--- Profit per transaction is 0.1% of the transaction value.
+-- Calculating CLV for each customer based on account tenure and transaction volume.
+-- where CLV = (total_transactions / tenure) * 12 * avg_profit_per_transaction
+-- and Profit per transaction is 0.1% of the transaction value.
 
 WITH AllTransactions AS (
     SELECT owner_id, confirmed_amount AS amount
