@@ -1,4 +1,4 @@
--- Assessment_Q1.sql
+-- HighValueCustomers.sql
 
 -- To find customers with at least one savings plan (is_regular_savings = 1)
 --     that has a confirmed deposit (confirmed_amount > 0) AND at least one
