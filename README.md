@@ -1,6 +1,6 @@
-# DataAnalytics-Assessment
+# CustomerTransactionAnalysis
 
-This repository contains my solutions for the SQL Proficiency Assessment as part of the Data Analyst role evaluation. The database provided (`adashi_assessment`) includes four tables:: `users_customuser`, `savings_savingsaccount`, `plans_plan`, and `withdrawals_withdrawal`. I have developed queries for four questions, each stored in separate SQL files (`Assessment_Q1.sql`, `Assessment_Q2.sql`, `Assessment_Q3.sql`, `Assessment_Q4.sql`), and this `README` provides detailed explanations of my approach and challenges encountered.
+This repository contains my solutions for a data analysis assessment. The database provided (`adashi_assessment`) includes four tables:: `users_customuser`, `savings_savingsaccount`, `plans_plan`, and `withdrawals_withdrawal`. I have developed queries for four questions, each stored in separate SQL files (`Assessment_Q1.sql`, `Assessment_Q2.sql`, `Assessment_Q3.sql`, `Assessment_Q4.sql`), and this `README` provides detailed explanations of my approach and challenges encountered.
 
 ---
 
