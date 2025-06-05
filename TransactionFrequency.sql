@@ -1,4 +1,4 @@
--- Assessment_Q2.sql
+-- TransactionFrequency.sql
 
 -- To calculate the average number of transactions per customer per month and categorize them:
 --    "High Frequency" (>= 10 transactions/month)
