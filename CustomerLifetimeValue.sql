@@ -1,4 +1,4 @@
--- Assessment_Q4.sql
+-- CustomerLifetimeValue.sql
 
 -- Calculating CLV for each customer based on account tenure and transaction volume.
 -- where CLV = (total_transactions / tenure) * 12 * avg_profit_per_transaction
