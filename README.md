@@ -1,6 +1,13 @@
 # CustomerTransactionAnalysis
 
-This repository contains my solutions for a data analysis assessment. The database provided (`adashi_assessment`) includes four tables:: `users_customuser`, `savings_savingsaccount`, `plans_plan`, and `withdrawals_withdrawal`. I have developed queries for four questions, each stored in separate SQL files (`Assessment_Q1.sql`, `Assessment_Q2.sql`, `Assessment_Q3.sql`, `Assessment_Q4.sql`), and this `README` provides detailed explanations of my approach and challenges encountered.
+This repository contains my solutions for a data analysis assessment. The project focuses on analyzing customer transaction data within a financial database, providing insights into customer behavior, account activity, and lifetime value. Using a dataset containing customer profiles, savings transactions, investment plans, and withdrawals, I designed four SQL queries to address key business questions: identifying high-value customers, analyzing transaction frequency, detecting inactive accounts, and estimating customer lifetime value (CLV). Each query is stored in a separate SQL file (`HighValueCustomers.sql, TransactionFrequency.sql, AccountInactivity.sql, CustomerLifetimeValue.sql`), and this `README` provides a detailed explanation of my approach, logic, and challenges encountered. 
+This project showcases my ability to write efficient, accurate, and well-structured SQL queries, making it a valuable addition to my data analytics portfolio.
+
+The dataset includes four tables:
+- users_customuser: Customer demographic and account information.
+- savings_savingsaccount: Records of deposit transactions.
+- plans_plan: Details of customer savings and investment plans.
+- withdrawals_withdrawal: Records of withdrawal transactions.
 
 ---
 
@@ -73,5 +80,5 @@ The task was to estimate CLV based on tenure (months since signup), total transa
 ---
 
 ### Submission Notes
-- All SQL files (`Assessment_Q1.sql`, `Assessment_Q2.sql`, `Assessment_Q3.sql`, `Assessment_Q4.sql`) contain single queries with proper formatting and comments.
+- All SQL files (`HighValueCustomers.sql, TransactionFrequency.sql, AccountInactivity.sql, CustomerLifetimeValue.sql`) contain single queries with proper formatting and comments.
 - This work is my original creation and has not been shared with other candidates.
