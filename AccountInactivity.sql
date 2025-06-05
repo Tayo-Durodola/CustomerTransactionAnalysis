@@ -1,4 +1,4 @@
--- Assessment_Q3.sql
+-- AccountInactivity.sql
 
 -- Identify all active savings and investment plans with no transactions in the last 365 days
 
